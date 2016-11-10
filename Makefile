@@ -1,4 +1,4 @@
-all: check-gofmt vet lint
+all: check-gofmt vet 
 
 check-gofmt:
 	@if [ -n "$(shell gofmt -l .)" ]; then \
