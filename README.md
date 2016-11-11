@@ -2,29 +2,30 @@
 
 [![Build Status](https://travis-ci.org/shapeshed/golang-book-examples.svg?branch=master)](https://travis-ci.org/shapeshed/golang-book-examples)
 
-* [Getting Started][1]
-* [Understanding Types][2]
-* [Variables][3]
-* [Functions][4]
-* [Control Structures][5]
-* [Arrays, Slices and Maps][6]
-* [Pointers and Structs][7]
-* [Methods and Interfaces][8]
-* [Strings][9]
-* [Error Handling][10]
-* [Goroutines][11]
-* [Channels][12]
-* [Packages][13]
-* [Go Conventions][14]
-* [Testing and Performance][15]
-* [Debugging][16]
-* [A Simple Command Line Tool][18]
-* [A HTTP Server in Go][19]
-* [A HTTP Client in Go][20]
-* [Working With JSON][21]
-* [Working With Files][22]
-* [A Basic JSON API][23]
-* [Deployment][24]
+1. [Getting Started][1]
+2. Understanding Types
+3. [Variables][3]
+4. Functions
+5. Control Structures
+6. Arrays, Slices and Maps
+7. Pointers and Structs
+8. Methods and Interfaces
+9. [Strings][9]
+10. [Error Handling][10]
+11. Goroutines
+12. Channels
+13. Packages
+14. Go Conventions
+15. Testing and Performance
+16. Debugging
+17. A Simple Command Line Tool
+18. A HTTP Server in Go
+19. A HTTP Client in Go
+20. Working With JSON
+21. Working With Files
+21. A Basic TCP Chat Server
+22. A Basic JSON API
+23. Deployment
 
 [1]: hour01
 [2]: hour02
@@ -50,4 +51,3 @@
 [22]: hour22
 [23]: hour23
 [24]: hour24
-
