@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/shapeshed/golang-book-examples.svg?branch=master)](https://travis-ci.org/shapeshed/golang-book-examples)
 
-# Summary
-
 * [Getting Started][1]
 * [Understanding Types][2]
 * [Variables][3]
@@ -28,9 +26,28 @@
 * [A Basic JSON API][23]
 * [Deployment][24]
 
-
-
 [1]: hour01
 [2]: hour02
 [3]: hour03
+[4]: hour04
+[5]: hour05
+[6]: hour06
+[7]: hour07
+[8]: hour08
+[9]: hour09
+[10]: hour10
+[11]: hour11
+[12]: hour12
+[13]: hour13
+[14]: hour14
+[15]: hour15
+[16]: hour16
+[17]: hour17
+[18]: hour18
+[19]: hour19
+[20]: hour20
+[21]: hour21
+[22]: hour22
+[23]: hour23
+[24]: hour24
 
