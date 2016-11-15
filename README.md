@@ -20,7 +20,7 @@
 16. Debugging
 17. A Simple Command Line Tool
 18. A HTTP Server in Go
-19. A HTTP Client in Go
+19. [HTTP Clients][19]
 20. Working With JSON
 21. Working With Files
 21. A Basic TCP Chat Server
