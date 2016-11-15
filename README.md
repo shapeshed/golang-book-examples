@@ -19,7 +19,7 @@
 15. Testing and Performance
 16. Debugging
 17. A Simple Command Line Tool
-18. A HTTP Server in Go
+18. [HTTP Servers][18]
 19. [HTTP Clients][19]
 20. Working With JSON
 21. Working With Files
