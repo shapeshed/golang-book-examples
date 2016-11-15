@@ -7,13 +7,17 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"os"
+	"time"
 )
 
 func main() {
 	debug := os.Getenv("DEBUG")
 
-	client := &http.Client{}
+	client := &http.Client{
+		Timeout: 50 * time.Millisecond,
+	}
 	request, err := http.NewRequest("GET", "https://ifconfig.co", nil)
+	request.Header.Add("Accept", "application/json")
 	if err != nil {
 		log.Fatal(err)
 	}
