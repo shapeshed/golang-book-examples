@@ -1,4 +1,4 @@
-Hour 3 - Variables
+# Hour 3 - Variables
 
 What You'll Learn in This Hour:
 
