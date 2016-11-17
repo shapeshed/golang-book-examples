@@ -24,7 +24,7 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 			log.Fatal(err)
 		}
 
-		fmt.Printf("%s", reqBody)
+		fmt.Printf("%s\n", reqBody)
 		w.Write([]byte("Received a POST request\n"))
 	default:
 		w.WriteHeader(http.StatusNotImplemented)
