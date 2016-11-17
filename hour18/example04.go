@@ -14,10 +14,10 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json; charset=utf-8")
 		w.Write([]byte("{\"message\": \"Hello World\"}"))
 	case "application/xml":
-		w.Header().Set("Content-Type", "application/xml")
-		w.Write([]byte("<?xml version=\"1.0\"?><Message>Hello World</Message>"))
+		w.Header().Set("Content-Type", "application/xml; charset=utf-8")
+		w.Write([]byte("<?xml version=\"1.0\" encoding=\"utf-8\"?><Message>Hello World</Message>"))
 	default:
-		w.Header().Set("Content-Type", "text/plain")
+		w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 		w.Write([]byte("Hello World\n"))
 	}
 
