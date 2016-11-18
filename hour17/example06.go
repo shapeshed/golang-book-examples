@@ -8,7 +8,7 @@ import (
 )
 
 func flagUsage() {
-	usageText := `example06 is an example cli tool.
+	fmt.Print(`example06 is an example cli tool.
         
 Usage:
 
@@ -19,24 +19,21 @@ The commands are:
 uppercase  uppercase a string 
 lowercase  lowercase a string
 
-Use "example06 [command] --help" for more information about a command.`
-	fmt.Fprintf(os.Stderr, "%s\n\n", usageText)
+Use "example06 [command] --help" for more information about a command.` + "\n\n")
 }
 
 func uppercaseCmdUsage() {
-	usageText := `usage: uppercase [-s]
+	fmt.Print(`usage: uppercase [-s]
         
     -s
-        A string to be uppercased`
-	fmt.Fprintf(os.Stderr, "%s\n\n", usageText)
+        A string to be uppercased` + "\n")
 }
 
 func lowercaseCmdUsage() {
-	UsageText := `usage: lowercase [-s]
+	fmt.Print(`usage: lowercase [-s]
         
     -s
-        A string to be lowercased`
-	fmt.Fprintf(os.Stderr, "%s\n\n", UsageText)
+        A string to be lowercased` + "\n")
 }
 
 func main() {
@@ -59,7 +56,6 @@ func main() {
 		uppercaseCmd.Parse(os.Args[2:])
 		if *s == "" {
 			uppercaseCmd.Usage()
-			return
 		}
 		fmt.Println(strings.ToUpper(*s))
 	case "lowercase":
@@ -67,7 +63,6 @@ func main() {
 		lowercaseCmd.Parse(os.Args[2:])
 		if *s == "" {
 			lowercaseCmd.Usage()
-			return
 		}
 		fmt.Println(strings.ToLower(*s))
 	default:
