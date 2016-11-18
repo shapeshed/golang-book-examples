@@ -18,7 +18,7 @@
 14. Go Conventions
 15. Testing and Performance
 16. Debugging
-17. A Simple Command Line Tool
+17. [Command Line Tools][17] 
 18. [HTTP Servers][18]
 19. [HTTP Clients][19]
 20. Working With JSON
