@@ -32,11 +32,11 @@ func uppercaseCmdUsage() {
 }
 
 func lowercaseCmdUsage() {
-	UsageText := `usage: lowercase [-s]
+	usageText := `usage: lowercase [-s]
         
     -s
         A string to be lowercased`
-	fmt.Fprintf(os.Stderr, "%s\n\n", UsageText)
+	fmt.Fprintf(os.Stderr, "%s\n\n", usageText)
 }
 
 func main() {
