@@ -8,8 +8,7 @@ import (
 )
 
 func flagUsage() {
-	usageText :=
-		`example06 is an example cli tool.
+	usageText := `example06 is an example cli tool.
         
 Usage:
 
@@ -25,8 +24,7 @@ Use "go [command] --help" for more information about a command.`
 }
 
 func uppercaseCmdUsage() {
-	usageText :=
-		`usage: uppercase [-s]
+	usageText := `usage: uppercase [-s]
         
     -s
         A string to be uppercased`
@@ -34,8 +32,7 @@ func uppercaseCmdUsage() {
 }
 
 func lowercaseCmdUsage() {
-	UsageText :=
-		`usage: lowercase [-s]
+	UsageText := `usage: lowercase [-s]
         
     -s
         A string to be lowercased`
@@ -68,10 +65,13 @@ func main() {
 	case "lowercase":
 		s := lowercaseCmd.String("s", "", "A string of text to be lowercased")
 		lowercaseCmd.Parse(os.Args[2:])
+		if *s == "" {
+			lowercaseCmd.Usage()
+			return
+		}
 		fmt.Println(strings.ToLower(*s))
 	default:
 		flag.Usage()
-		return
 	}
 
 }
