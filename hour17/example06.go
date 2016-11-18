@@ -19,7 +19,7 @@ The commands are:
 uppercase  uppercase a string 
 lowercase  lowercase a string
 
-Use "go [command] --help" for more information about a command.`
+Use "example06 [command] --help" for more information about a command.`
 	fmt.Fprintf(os.Stderr, "%s\n\n", usageText)
 }
 
