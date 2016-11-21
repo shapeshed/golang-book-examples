@@ -8,7 +8,7 @@ import (
 
 func main() {
 	flag.Usage = func() {
-		usageText := `Usage example05 [OPTION]
+		usageText := `Usage example04 [OPTION]
 An example of customising usage output
 
   -s, --s         example string argument, default: String help text
