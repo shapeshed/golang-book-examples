@@ -6,11 +6,11 @@ import (
 )
 
 /*
-var Salt []byte
+var salt []byte
 
 func init() {
 	var err error
-	Salt, err = ioutil.ReadFile("salt.txt")
+	salt, err = ioutil.ReadFile("salt.txt")
 	if err != nil {
 		fmt.Print(err)
 	}
@@ -27,5 +27,6 @@ func SaltSecret(secret string) string {
 
 /*
 func SaltSecret(secret string) string {
-	return secret + string(Salt)
-}*/
+	return secret + string(salt)
+}
+*/
