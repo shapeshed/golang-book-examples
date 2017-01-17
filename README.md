@@ -14,7 +14,7 @@
 10. [Error Handling][10]
 11. Goroutines
 12. Channels
-13. Packages
+13. [Packages][13]
 14. Go Conventions
 15. [Testing and Performance][15]
 16. Debugging
