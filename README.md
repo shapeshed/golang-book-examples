@@ -16,7 +16,7 @@
 12. Channels
 13. Packages
 14. Go Conventions
-15. Testing and Performance
+15. [Testing and Performance][15]
 16. Debugging
 17. [Command Line Tools][17] 
 18. [HTTP Servers][18]
