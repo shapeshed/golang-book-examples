@@ -16,7 +16,7 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Received a POST request\n"))
 	default:
 		w.WriteHeader(http.StatusNotImplemented)
-		w.Write([]byte(http.StatusText(http.StatusNotImplemented)))
+		w.Write([]byte(http.StatusText(http.StatusNotImplemented) + "\n"))
 	}
 
 }
