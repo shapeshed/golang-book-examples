@@ -1,16 +1,16 @@
 package main
 
 import (
-    "bytes"
-    "fmt"
+	"bytes"
+	"fmt"
 )
 
 func main() {
-    var buffer bytes.Buffer
+	var buffer bytes.Buffer
 
-    for i := 0; i < 500; i++ {
-        buffer.WriteString("z")
-    }
+	for i := 0; i < 500; i++ {
+		buffer.WriteString("z")
+	}
 
-    fmt.Println(buffer.String())
+	fmt.Println(buffer.String())
 }
