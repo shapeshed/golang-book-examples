@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/shapeshed/golang-book-examples.svg?branch=master)](https://travis-ci.org/shapeshed/golang-book-examples)
 
 1. [Getting Started][1]
-2. Understanding Types
+2. [Understanding Types][2]
 3. [Variables][3]
-4. Functions
+4. [Functions][4]
 5. Control Structures
 6. Arrays, Slices and Maps
 7. Pointers and Structs
