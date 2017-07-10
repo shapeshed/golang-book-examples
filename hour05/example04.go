@@ -3,11 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	b := true
-	if b {
-		fmt.Println("I am executed!")
-	}
-	if b {
-		fmt.Println("I am also executed!")
+	i := 2
+	if i == 3 {
+		fmt.Println("i is 3")
+	} else if i == 2 {
+		fmt.Println("i is 2")
 	}
 }

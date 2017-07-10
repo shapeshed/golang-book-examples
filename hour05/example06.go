@@ -3,6 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	defer fmt.Println("I am run after the function returns")
-	fmt.Println("Hello World!")
+	s := "c"
+
+	switch s {
+	case "a":
+		fmt.Println("The letter a!")
+	case "b":
+		fmt.Println("The letter b!")
+	default:
+		fmt.Println("I don't recognise that letter!")
+	}
 }

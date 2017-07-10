@@ -3,10 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	b := true
-	if b {
-		fmt.Println("I am executed!")
-	} else if b {
-		fmt.Println("I am not executed!")
+	i := 2
+
+	switch i {
+	case 2:
+		fmt.Println("Two!")
+	case 3:
+		fmt.Println("Three!")
+	case 4:
+		fmt.Println("Four!")
 	}
 }

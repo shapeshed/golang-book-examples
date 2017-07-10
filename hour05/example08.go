@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-HelloWorld:
-	fmt.Println("Hello World")
-	goto HelloWorld
+	for i := 0; i < 10; i++ {
+		fmt.Println("i is", i)
+	}
 }
