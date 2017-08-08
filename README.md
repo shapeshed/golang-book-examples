@@ -6,9 +6,9 @@
 2. [Understanding Types][2]
 3. [Variables][3]
 4. [Functions][4]
-5. Control Structures
-6. Arrays, Slices and Maps
-7. Pointers and Structs
+5. [Control Structures][5]
+6. [Arrays, Slices and Maps][6]
+7. [Structs][7]
 8. Methods and Interfaces
 9. [Strings][9]
 10. [Error Handling][10]
