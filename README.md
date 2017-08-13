@@ -9,7 +9,7 @@
 5. [Control Structures][5]
 6. [Arrays, Slices and Maps][6]
 7. [Structs][7]
-8. Methods and Interfaces
+8. [Methods and Interfaces][8]
 9. [Strings][9]
 10. [Error Handling][10]
 11. Goroutines
