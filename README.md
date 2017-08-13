@@ -12,7 +12,7 @@
 8. [Methods and Interfaces][8]
 9. [Strings][9]
 10. [Error Handling][10]
-11. Goroutines
+11. [Goroutines][11]
 12. Channels
 13. [Packages][13]
 14. Go Conventions
