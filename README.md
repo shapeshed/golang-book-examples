@@ -13,7 +13,7 @@
 9. [Strings][9]
 10. [Error Handling][10]
 11. [Goroutines][11]
-12. Channels
+12. [Channels][12]
 13. [Packages][13]
 14. Go Conventions
 15. [Testing and Performance][15]
