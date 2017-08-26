@@ -15,7 +15,7 @@
 11. [Goroutines][11]
 12. [Channels][12]
 13. [Packages][13]
-14. Go Conventions
+14. [Go Conventions][14]
 15. [Testing and Performance][15]
 16. Debugging
 17. [Command Line Tools][17] 
