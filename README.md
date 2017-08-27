@@ -17,7 +17,7 @@
 13. [Packages][13]
 14. [Go Conventions][14]
 15. [Testing and Performance][15]
-16. Debugging
+16. [Debugging][16]
 17. [Command Line Tools][17] 
 18. [HTTP Servers][18]
 19. [HTTP Clients][19]
