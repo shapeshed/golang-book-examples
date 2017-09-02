@@ -25,7 +25,7 @@
 21. [Working With Files][21]
 21. A Basic TCP Chat Server
 22. A Basic JSON API
-23. Deployment
+23. [Deployment][24]
 
 [1]: hour01
 [2]: hour02
