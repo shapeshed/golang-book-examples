@@ -24,7 +24,7 @@
 20. [Working With JSON][20]
 21. [Working With Files][21]
 22. [Regular Expressions][22]
-23. A Basic JSON API
+23. [Time][23]
 24. [Deployment][24]
 
 [1]: hour01
