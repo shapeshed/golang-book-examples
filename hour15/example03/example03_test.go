@@ -2,7 +2,7 @@ package example03
 
 import "testing"
 
-func TestTranslation(t *testing.T) {
+func TestFrTranslation(t *testing.T) {
 	got := translate("fr")
 	want := "Bonjour "
 	if got != want {
@@ -10,7 +10,7 @@ func TestTranslation(t *testing.T) {
 	}
 }
 
-func TestGreeting(t *testing.T) {
+func TestUSTranslation(t *testing.T) {
 	got := Greeting("George", "en-US")
 	want := "Hello George"
 	if got != want {

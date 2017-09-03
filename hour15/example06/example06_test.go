@@ -1,17 +1,11 @@
-package salt
+package example06
 
 import "testing"
 
-func TestSaltSecret(t *testing.T) {
-	got := SaltSecret("foo")
-	want := "fooiep4Og#aiW3f\n"
+func TestGreeting(t *testing.T) {
+	got := Greeting("George")
+	want := "Hello George"
 	if got != want {
-		t.Fatalf("SaltSecret(\"foo\") = %q, want %q", got, want)
-	}
-}
-
-func BenchmarkSaltSecret(b *testing.B) {
-	for n := 0; n < b.N; n++ {
-		SaltSecret("somesecret")
+		t.Fatalf("Expected %q, got %q", want, got)
 	}
 }

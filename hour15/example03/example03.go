@@ -4,8 +4,10 @@ func translate(s string) string {
 	switch s {
 	case "en-US":
 		return "Hello "
-	case "fr":
+	case "fr-FR":
 		return "Bonjour "
+	case "it-IT":
+		return "Ciao "
 	default:
 		return "Hello "
 	}
@@ -13,6 +15,5 @@ func translate(s string) string {
 
 func Greeting(name, locale string) string {
 	salutation := translate(locale)
-	//return ("Hello" + s)
 	return (salutation + name)
 }

@@ -1,32 +1,9 @@
-package salt
+package example06
 
-import (
-	"fmt"
-	"io/ioutil"
-)
-
-/*
-var salt []byte
-
-func init() {
-	var err error
-	salt, err = ioutil.ReadFile("salt.txt")
-	if err != nil {
-		fmt.Print(err)
-	}
-}
-*/
-
-func SaltSecret(secret string) string {
-	b, err := ioutil.ReadFile("salt.txt")
-	if err != nil {
-		fmt.Print(err)
-	}
-	return secret + string(b)
+func Greeting(s string) string {
+	return ("Hello " + s)
 }
 
-/*
-func SaltSecret(secret string) string {
-	return secret + string(salt)
+func Farewell(s string) string {
+	return ("Goodbye " + s)
 }
-*/

@@ -11,14 +11,14 @@ type GreetingTest struct {
 var greetingTests = []GreetingTest{
 	{"George", "en-US", "Hello George"},
 	{"Chloé", "fr-FR", "Bonjour Chloé"},
-	{"Giuseppe", "it-IT", "Ciao Guiseppe"},
+	{"Giuseppe", "it-IT", "Ciao Giuseppe"},
 }
 
 func TestGreeting(t *testing.T) {
 	for _, test := range greetingTests {
-		actual := Greeting(test.name, test.locale)
-		if actual != test.want {
-			t.Errorf("Greeting(%s,%s) = %v; want %v", test.name, test.locale, actual, test.want)
+		got := Greeting(test.name, test.locale)
+		if got != test.want {
+			t.Errorf("Greeting(%s,%s) = %v; want %v", test.name, test.locale, got, test.want)
 		}
 	}
 }
