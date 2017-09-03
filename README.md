@@ -23,9 +23,9 @@
 19. [HTTP Clients][19]
 20. [Working With JSON][20]
 21. [Working With Files][21]
-21. A Basic TCP Chat Server
-22. A Basic JSON API
-23. [Deployment][24]
+22. [Regular Expressions][22]
+23. A Basic JSON API
+24. [Deployment][24]
 
 [1]: hour01
 [2]: hour02
