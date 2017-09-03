@@ -1,1 +1,1 @@
-package foo
+package example01
