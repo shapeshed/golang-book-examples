@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	s := "Ti esrever dna ti pilf nwod gniht ym tup I"
+	s := "ti esrever dna ti pilf nwod gniht ym tup I"
 	fmt.Println(stringutil.Reverse(s))
 }
