@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	postData := strings.NewReader("{ \"some\": \"json\" }")
+	postData := strings.NewReader(`{ "some": "json" }`)
 	response, err := http.Post("https://httpbin.org/post", "application/json", postData)
 	if err != nil {
 		log.Fatal(err)
