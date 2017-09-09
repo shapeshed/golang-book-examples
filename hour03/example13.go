@@ -4,13 +4,13 @@ import (
 	"fmt"
 )
 
-func showMemoryAddress(x int) {
-	fmt.Println(&x)
+func showMemoryAddress(x *int) {
+	fmt.Println(x)
 	return
 }
 
 func main() {
 	i := 1
 	fmt.Println(&i)
-	showMemoryAddress(i)
+	showMemoryAddress(&i)
 }

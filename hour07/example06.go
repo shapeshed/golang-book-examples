@@ -25,5 +25,5 @@ func main() {
 		},
 	}
 	fmt.Printf("%+v\n", e)
-	fmt.Printf(e.Address.Street)
+	fmt.Println(e.Address.Street)
 }

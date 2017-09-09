@@ -4,7 +4,13 @@ import (
 	"fmt"
 )
 
+func showMemoryAddress(x int) {
+	fmt.Println(&x)
+	return
+}
+
 func main() {
-	s := "Hello world"
-	fmt.Println(&s)
+	i := 1
+	fmt.Println(&i)
+	showMemoryAddress(i)
 }

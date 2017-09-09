@@ -20,4 +20,5 @@ func main() {
 		fmt.Println("a and b are the same")
 	}
 	fmt.Printf("%+v\n", a)
+	fmt.Printf("%+v\n", b)
 }
