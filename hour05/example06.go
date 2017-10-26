@@ -11,6 +11,6 @@ func main() {
 	case "b":
 		fmt.Println("The letter b!")
 	default:
-		fmt.Println("I don't recognise that letter!")
+		fmt.Println("I don't recognize that letter!")
 	}
 }
