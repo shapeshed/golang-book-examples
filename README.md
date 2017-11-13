@@ -4,202 +4,237 @@
 
 ## [1. Getting Started][1]
 
-* What Go Is and Why It Was created
-* How To Install Go
-* How To Set Up Your environment
-* Creating And Running Your First Go program
+* Introducing Go
+* Installing Go
+* Setting Up Your Environment
+* Writing Your First Go Program: Hello World
 
 ## [2. Understanding Types][2]
 
-* What Types Are in Programming
-* How Types Work in Go
-* How to Use Basic Types
-* How to Convert Between Types
+* What Is a Data Type?
+* Differentiating Between Static and Dynamic Typing
+* Implementing Booleans
+* Understanding Numeric Types
+* Checking the Type of a Variable
+* Converting Between Types
 
-## [3. Variables][3]
+## [3. Understanding Variables][3]
 
-* How To Declare A Variable
-* The Difference Between A Variable And A Constant
-* What A Zero Value Variable Is
-* What Variable Scope Is
-* How To Use Pointers
+* What Is a Variable?
+* Declaring Shorthand Variables
+* Understanding Variables and Zero Values
+* Writing a Short Variable Declaration
+* Styles of Variable Declaration
 
-## [4. Functions][4]
+## [4. Using Functions in Go][4]
 
-* How To Write a Function
-* How To Return a Single Result
-* How To Return Multiple Results
-* How To Use Named Values
-* How To Use Recursive Functions
+* What Is a Function?
+* Defining Variadic Functions
+* Using Named Return Values
+* Using Recursive Functions
+* Passing Functions as Values
 
-## [5. Control Structures][5]
+## [5. Using Control Flow][5]
 
-* How To Use if, else and else if statements
-* How To Use Comparison Operators
-* How To Use Arithmetic Operators
-* How To Use switch Statements
-* How To Use for Statements
+* Using the if Statement
+* Using the else Statement
+* Using the else if Statement
+* Using Comparison Operators 
+* Using Arithmetic Operators 
+* Using Logical Operators 
+* Using the switch Statement 
+* Looping with the for Statement
+* Using the defer Statement
 
-## [6. Arrays, Slices, Maps][6] 
+## [6. Working with Arrays, Slices, Maps][6] 
 
-* How to Work With Arrays
-* How to Work With Slices
-* How To Add and Remove Elements From a Slice
-* How To Work With Maps
+* Working with Arrays
+* Working with Slices
+* Working with Maps
 
-## [7. Structs][7] 
+## [7. Using Structs and Pointers][7] 
 
-* What A Struct Is
-* How To Initialize A Struct
-* How Default Vaules Are Assigned To Structs
-* How To Compare Structs
-* When To Use Pointers
+* What Is a Struct
+* Initializing a Struct
+* Nesting Structs
+* Creating Default Values for Structs
+* Comparing Structs
+* Understanding Public and Private Values
+* Differentiating Between Point and Value References
 
-## [8. Methods And Interfaces][8]
+## [8. Creating Methods And Interfaces][8]
 
-* How To Use Methods
-* How To Create Method Sets
-* How To Use Pointer And Value References
-* How To Use Interfaces
+* Using Methods
+* Creating Method Sets
+* Working with Methods and Pointers
+* Using Interfaces
 
-## [9. Strings][9]
+## [9. Working with Strings][9]
 
-* How to Create a String
-* How to Use Rune Literals
-* How to Concatenate Strings
-* An Introduction To Encoding
+* Creating String Literals
+* Understanding Rune Literals
+* Concatenating Strings
 
 ## [10. Error Handling][10]
 
-* How to work with errors in Go
-* How to create errors
-* How to use Go's idiomatic approach to errors
-* How to write good error messages
+* Handling Errors and Idiomatic Go
+* Understanding the Error Type
+* Creating Errors
+* Formatting Errors
+* Returning an Error from a Function
+* Errors and Usability
+* Don't panic
 
-## [11. Goroutines][11]
+## [11. Working with Goroutines][11]
 
-* How To Use Channels
-* How To Use Buffered Channels
-* The To Use Select Statements
-* How To Use Quit Channels
+* Understanding Concurrency
+* Concurrency Versus Parallelism
+* Understanding Concurrency Through a Web Browser
+* Blocking and Non-Blocking Code
+* Handling Concurrent Operations with Goroutines
+* Using Goroutines to Manage Latency
+* Defining Goroutines
 
-## [12. Channels][12]
+## [12. Introducing Channels][12]
 
-* Communicating between goroutines
-* Buffered channels
-* Channel directions
-* Range and close
-* Select
-* Shared-variable concurrency and data races
+* Using Channels
+* Using Buffered Channels
+* Blocking and Flow Control
+* Using Channels as Function Arguments
+* Employing the select Statement
+* Quitting Channels
 
 ## [13. Packages][13]
 
-* Basics Of Packages
-* How To Use A Package
-* How To Use A Third-Party Package
-* How To Manage Dependencies
-* How To Create A Package
+* Importing Packages
+* Understanding Package Usage
+* Using Third-Party Packages
+* Installing a Third-Party Package
+* Managing Third-Party Dependencies
 
-## [14. Go Conventions][14]
+## [14. Naming Conventions in Go][14]
 
-* How To Use The gofmt Tool
-* Naming Conventions In Go
-* How To Use The golint Tool
-* How To To Use The godoc Tool
+* Formatting Code in Go
+* Using gofmt
+* Configuring Text Editors
+* Naming Conventions
+* Using golint
+* Using godoc
+* Automating Workflow
 
 ## [15. Testing and Performance][15]
 
-* Why Testing Is Important
-* The Got Want Testing Pattern
-* How To Use Table Tests
-* How To Benchmark Go Code
-* How To Understand Test Coverage
+* Testing: The Most Important Aspect of Software Development
+* testing Package
+* Running Table Tests
+* Benchmarking in Go
+* Providing Test Coverage
 
 ## [16. Debugging][16]
 
-* How To Use Logging To Help With Debugging
-* How To Print Values
-* How To Use Delve To Debug
-* How To Use The GNU Debugger To Debug
+* Logging
+* Printing Data
+* Using the fmt Package
+* Using Delve
+* Using gdb
 
-## [17. Command Line Programs][17]
+## [17. Using Command Line Programs][17]
 
-* How To Create A Basic Command Line Program
-* How To Receive Raw Arguments
-* How To Parse Command Line Flags
-* How To Customize Help Text
-* How To Create Subcommands
+* Operating with Inputs and Outputs
+* Accessing Raw Command-Line Arguments
+* Parsing Command-Line Flags
+* Working with Types
+* Customizing Help Text
+* Creating Subcommands
+* POSIX Compliance
+* Installing and Sharing Command-Line Programs
 
-## [18. HTTP Servers][18]
+## [18. Creating HTTP Servers][18]
 
-* Creating A HTTP Server
-* How Routing Works
-* How Handler Functions Work
-* Serving Different Types Of Request
-* Serve Different Types Of Content
+* Announcing Your Presence with the "Hello World" Web Server
+* Examing Requests and Responses
+* Working with Handler Functions
+* Handling 404s
+* Setting a Header
+* Responding to Different Types of Requests
+* Receiving Data from GET and POST Requests
 
-## [19. HTTP Clients][19]
+## [19. Creating HTTP Clients with Go][19]
 
-* How To Create A Simple Http Client
-* How To Make A GET Request
-* How To Make A POST Request
-* How To Have Finer Control Over HTTP Requests
-* How To Debug HTTP Requests
-* How To Deal With Timeouts
+* Understanding HTTP
+* Making a GET Request
+* Making a POST Request
+* Gaining Further Control over HTTP Requests
+* Debugging HTTP Requests
+* Dealing With Timeouts
 
 ## [20. Working with JSON][20]
 
-* What JSON Is
-* How To Encode JSON
-* How To Use Struct Tags
-* How To Decode JSON
-* How To Fetch JSON Over HTTP
+* Introducing JSON
+* Using JSON APIs
+* Using JSON with Go
+* Decoding JSON
+* Mapping Data Types
+* Working with JSON Received over HTTP
 
 ## [21. Working With files][21]
 
-* How To Read A File
-* How To Create And Write To A File
-* How To List A Directory
-* How To Copy And Delete Files
-* How To Use Files For Configuration Management
+* The Importance of Files
+* Reading and Writing Files with the ioutil Package
+* Writing to a File
+* Listing a Directory
+* Copying a File
+* Deleting Files
+* Using Files to Manage Configuration
 
-## [22. Regular Expressions][22]
+## [22. Introducing Regular Expressions][22]
 
-* What A Regular Expression Is
-* How To Search For A Needle In A Haystack
+* Defining Regular Expressions
+* Getting Familiar with Regular Expression Syntax
 * How To Validate Data Using Regular Expressions
-* How To Clean Data Using Regular Expressions
+* Using Regular Expressions for Validation
+* Using Regular Expressions to Transform Data
+* Parsing Data with Regular Expressions
 
 ## [23. Time][23]
 
-* The Importance of Time in Programming
-* How Wall Clock Time Can Vary
-* How To Parse Time Values
-* How To Compare Time Values
+* Programming the Element of Time
+* Putting Your Program to Sleep
+* Setting a Timeout
+* Using a Ticker
+* Representing Time in a String format
+* Working with Time structs
+* Adding and Subtracting Time
+* Comparing Different Time Structs
 
 ## [24. Deployment][24]
 
-* How To Compile Binaries For Different Target Platforms and Architectures
-* How To Optimize The Size Of Compiled Binaries
-* How To Use Docker
-* How To Share Go Binaries
+* Understanding targets
+* Reducing the Size of Binaries
+* Using Docker
+* Downling Binary Files
+* Using go get
+* Releasing Code with Package Managers
 
-# Bonus Chapters
+## [25. Creating a RESTful JSON API][25]
 
-## A basic tcp chat server
+* Managing Dependencies with dep
+* Creating a HTTP Server with httprouter
+* Scaffolding a REST API
+* Testing HTTP Routes
+* Serving JSON
+* Adding Data Persistence
 
-* Creating a tcp chat server
-* Using goroutines
-* Connecting clients
-* Communicating between channels
-* Broadcasting messages
 
-## A basic JSON API
+## [26. Creating a TCP Chat Server][26]
 
-* Defining routes
-* Connecting to a data store
-* Reading and writing data
-* Adding tests
+* What is TCP?
+* Using telnet
+* Using the net Package
+* Creating a Simple Chat Server
+* Managing Client Connections
+* Enabling Messaging Between Clients
+* Preventing Echoes
 
 [1]: hour01
 [2]: hour02
@@ -225,3 +260,5 @@
 [22]: hour22
 [23]: hour23
 [24]: hour24
+[25]: hour25
+[26]: hour26
