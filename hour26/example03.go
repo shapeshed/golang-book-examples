@@ -8,6 +8,8 @@ import (
 )
 
 var connections []net.Conn
+var addClient = make(chan net.Conn)
+var removeClient = make(chan net.Conn)
 
 func main() {
 
@@ -17,18 +19,33 @@ func main() {
 	}
 	defer server.Close()
 
+	go startChannels()
+
 	for {
 		conn, err := server.Accept()
 		if err != nil {
 			log.Fatal(err)
 		}
-		connections = append(connections, conn)
-		fmt.Println(len(connections))
+		addClient <- conn
 
 		go handleRequest(conn)
 
 	}
 
+}
+
+func startChannels() {
+	for {
+		select {
+
+		case newClient := <-addClient:
+			connections = append(connections, newClient)
+			fmt.Println(len(connections))
+		case deadClient := <-removeClient:
+			removeConn(deadClient)
+			fmt.Println(len(connections))
+		}
+	}
 }
 
 func handleRequest(conn net.Conn) {
@@ -38,7 +55,7 @@ func handleRequest(conn net.Conn) {
 		_, err := conn.Read(message)
 		if err != nil {
 			if err == io.EOF {
-				removeConn(conn)
+				removeClient <- conn
 				conn.Close()
 				return
 			}
@@ -55,5 +72,4 @@ func removeConn(conn net.Conn) {
 		}
 	}
 	connections = append(connections[:i], connections[i+1:]...)
-	fmt.Println(len(connections))
 }
